@@ -1,0 +1,149 @@
+:root {
+  --blue: #0971f1;
+  --green: #5bc266;
+  --indigo: #535bcf;
+  --orange: #f69935;
+  --purple: #bf5af2;
+  --pink: #eb455a;
+  --red: #e1270e;
+  --teal: #6cc7f6;
+  --yellow: #fbcc43;
+
+  --dark-1: #040404;
+  --dar-2: #151515;
+  --dark-3: #242424;
+  --dark-4: #343434;
+  --gray-1: #757575;
+  --gray-2: #999999;
+  --gray-3: #e5e5e5;
+
+  --white: #ffffff;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.font-title {
+  font-size: 1rem;
+  line-height: calc(1rem * 1.5);
+  font-weight: 500;
+}
+.font-button {
+  font-size: 1rem;
+  line-height: calc(1rem * 1.5);
+}
+.font-paragraph {
+  font-size: 1rem;
+  line-height: calc(1rem * 1.5);
+}
+.font-secondary {
+  font-size: 0.8823rem;
+  line-height: calc(0.8823rem * 1.5);
+}
+.font-tertiary {
+  font-size: 0.7647rem;
+  line-height: calc(0.7647rem * 1.5);
+}
+.font-actionbar {
+  font-size: 0.5882rem;
+  line-height: calc(0.5882rem * 1.5);
+}
+
+.container {
+  widows: 100%;
+  height: 100vh;
+  min-height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  widows: 100%;
+  height: 100vh;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+.navbar {
+  position: absolute;
+  height: 100%;
+  min-height: 100vh;
+  width: 20rem;
+  background: var(--white);
+  z-index: 1;
+  border-right: 1px solid var(--gray-3);
+}
+
+.navbar .header {
+  padding: 0.5rem 1rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-3);
+}
+
+.navbar .footer {
+  position: sticky;
+  bottom: 0;
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-top: 1px solid var(--gray-3);
+  background: var(--white);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: calc(100% - 7rem);
+}
+.navbar ul li {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--gray-3);
+  display: flex;
+  justify-content: left;
+}
+
+.navbar ul li .avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--white);
+  border: 1px solid var(--gray-3);
+  margin-right: 0.5rem;
+}
+.navbar ul li .date {
+  margin-right: 0.25rem;
+}
+.navbar ul li .description {
+  color: var(--gray-1);
+}
+
+.navbar ul li:hover {
+  color: var(--white);
+  background: var(--pink);
+  border-bottom: 1px solid var(--pink);
+}
+
+.navbar ul li.selected {
+  background: var(--gray-3);
+  border-bottom: 1px solid var(--gray-3);
+}
+
+.navbar ul li:hover .description {
+  color: var(--white);
+}

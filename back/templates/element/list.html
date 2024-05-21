@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="title">{% block title %} Elements {% endblock %}</h1>
+    <div class="content">
+        {% for element in elements %}
+            <div class="element">
+                <p><b>#{{ element.id }}</b></p>
+                <p>{{ element.type }}</p>
+                <p>{{ element.content }}</p>
+                <p>{{ element.position }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
