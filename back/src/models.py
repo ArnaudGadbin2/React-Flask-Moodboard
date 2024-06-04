@@ -1,4 +1,4 @@
-from extensions import db
+from src.extensions import db
 from sqlalchemy.orm import Mapped, mapped_column
 
 class Element(db.Model):

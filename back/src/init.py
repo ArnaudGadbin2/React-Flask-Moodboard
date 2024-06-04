@@ -1,17 +1,25 @@
 from flask import Flask, render_template, request
 from flask_cors import CORS
-from config import Config
-from extensions import db
-from routes import api
+from flasgger import Swagger
+from src.config import Config
+from src.extensions import db
+from src.routes import api
 
 def register_extensions(app):
-    db.init_app(app) 
+    db.init_app(app)
+    CORS(app)
+    Swagger(app) 
 
 def create_app(config_class=Config):
     app = Flask(__name__)
-    CORS(app)
     app.config.from_object(config_class)
-    
+    app.config['SWAGGER'] = {
+    'title': 'MoodBoard API',
+    'uiversion': 3,
+    'version': '1.0',
+    'description': 'API for MoodBoard',
+    'termsOfService': 'Use with caution!'
+}
     register_extensions(app)
     
     app.register_blueprint(api, url_prefix='/api')
