@@ -2,7 +2,7 @@
 
 ## Description
 
-Back and Frontend creating a small moodboard, where you can add texts and images, and drag them where you want.
+Backend and Frontend describing a small moodboard project, where you can add texts and images, and drag them where you want.
 Text and Images are saved in a postgres DB in a docker image.
 The images will be different on reload because I use a random image url, the texts will be the same.
 
@@ -47,3 +47,7 @@ $ docker compose up --build
 3 - Availability:
 
 The api is available at http://localhost:8080
+
+4 - Swagger:
+
+http://localhost:8080/apidocs/#/
