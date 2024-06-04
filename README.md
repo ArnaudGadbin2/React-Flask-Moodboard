@@ -47,3 +47,7 @@ $ docker compose up --build
 3 - Availability:
 
 The api is available at http://localhost:8080
+
+4 - Swagger:
+
+http://localhost:8080/apidocs/#/
