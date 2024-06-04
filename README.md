@@ -1,4 +1,4 @@
-# Molyxia Test
+# React-Flask-Moodboard
 
 ## Description
 
