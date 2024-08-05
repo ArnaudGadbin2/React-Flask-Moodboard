@@ -22,4 +22,4 @@ async function deleteElement(id) {
   return await axios.delete(`http://localhost:8080/api/element/${id}`)
 }
 
-export { getMoodBoard, addText, addImage }
+export { getMoodBoard, addText, addImage, deleteElement }

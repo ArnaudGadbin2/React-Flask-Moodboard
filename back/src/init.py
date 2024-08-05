@@ -14,12 +14,12 @@ def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
     app.config['SWAGGER'] = {
-    'title': 'MoodBoard API',
-    'uiversion': 3,
-    'version': '1.0',
-    'description': 'API for MoodBoard',
-    'termsOfService': 'Use with caution!'
-}
+        'title': 'MoodBoard API',
+        'uiversion': 3,
+        'version': '1.0',
+        'description': 'API for MoodBoard',
+        'termsOfService': 'Use with caution!'
+    }
     register_extensions(app)
     
     app.register_blueprint(api, url_prefix='/api')
